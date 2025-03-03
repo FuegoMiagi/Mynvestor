@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload Files</title>
+  <link rel="icon" href="../dist/img/favicon.png">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition login-page dark-mode bg-navy">
+  <div class="login-box">
+    <div class="login-logo">
+      <a href="#" class="text-dark">
+        <i class="text-success text-center fa-2x fa fa-globe"></i>
+        <br>
+        <b><strong class="text-success">My</strong>nvestor</b>
+      </a>
+      <p></p>
+      <h5 class="text-center text-sm text-dark">
+        You are almost done.
+      </h5>
+    </div>
+
+    <div id="accordion">
+      <div class="card-header bg-navy text-center">
+        <h4 class="card-title w-100">
+          <a class="d-block w-100" data-toggle="collapse" href="#collapseOne">
+            <b class="text-muted">Upload Required Files</b>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="collapse bg-dark show" data-parent="#accordion">
+        <div class="card-body ">
+          <form>
+            <p class="text-xs">
+              <b class="d-block text-muted">* Use <b class="text-success">pictures</b> or <b
+                  class="text-success">document</b>
+                files</b>
+              <b class="d-block text-muted">* Use <b class="text-success">National ID</b> or <b
+                  class="text-success">Passport ID</b></b>
+              <b class="d-block text-muted">* Use <b class="text-success">Bankstatement</b> if you have no
+                payslip</b>
+            </p>
+
+            <form>
+              <div class="form-group">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">National ID</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">Payslip</label>
+                  <p class="text-dark text-sm">* This is optional if you are <b class="text-success">not-employed</b>.
+                  </p>
+
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">Utility Bill</label>
+                  <p class="text-dark text-sm">* Water or Electricity payment receipts.</p>
+
+                </div>
+              </div>
+            </form>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="text-center">
+      <a href="step2.html"><button type="submit" class="btn btn-outline-success btn-sm text-center"><i
+            class="fa fa-arrow-left"></i> Back</button></a>
+      <a href="step8.html"><button type="submit" class="btn btn-outline-success btn-sm text-center">Next
+          <i class="fa fa-arrow-right"></i></button></a>
+    </div>
+    <br>
+    <h6 class="text-center text-primary">
+      <i class="text-success text-center fa fa-lock"></i><br>
+      <span class="text-center text-primary">
+        <i class="text-dark text-center fa fa-globe text-xs"></i>
+        <i class="text-dark text-center fa fa-globe text-xs"></i>
+        <i class="text-success text-center fa fa-globe text-xs"></i>
+      </span>
+    </h6>
+  </div>
+  <!-- /.login-box -->
+
+
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+
+</body>
+
+</html>
