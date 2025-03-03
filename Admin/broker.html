@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin | Broker</title>
+  <link rel="icon" href="../dist/img/favicon.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-dark">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 New Clients
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 New Orders
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 Transactions
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-navy elevation-4 main-sidebar-custom">
+      <!-- Brand Logo -->
+      <a href="dashboard.html" class="brand-link bg-navy">
+        <i class="text-success fa-2x fas fa-globe brand-image img-circle elevation-3 "></i>
+        <span class="brand-text font-weight-light"><strong class="text-success"><b>My</b></strong><b
+            class="text-dark">nvestor</b></span>
+      </a>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../dist/img/logos/mse.png" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block"><b>Malawi Stock Exchange</b></a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+              <a href="dashboard.html" class="nav-link">
+                <i class="nav-icon fa fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="brokers.html" class="nav-link active">
+                <i class="nav-icon fa fa-user-tie"></i>
+                <p>
+                  Brokers
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companies.html" class="nav-link">
+                <i class="nav-icon fa fa-city"></i>
+                <p>
+                  Companies
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="education.html" class="nav-link">
+                <i class="nav-icon fa fa-book"></i>
+                <p>
+                  Education
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="reports.html" class="nav-link">
+                <i class="nav-icon fa fa-file-alt"></i>
+                <p>
+                  Reports
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link">
+                <i class="nav-icon fa fa-question-circle"></i>
+                <p>
+                  Help
+                </p>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+      <div class="sidebar-custom">
+        <a href="lockscreen.html" class="btn btn-block btn-link"><i class="fa fa-power-off text-danger"></i></a>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper bg-navy">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Stockbrokers Malawi Limited <small class="text-xs text-dark float-right"> 08:50 |
+                  13/7/22</small></h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="brokers.html">Brokers</a></li>
+                <li class="breadcrumb-item active">Cedar Capital</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 ">
+              <!-- Profile Image -->
+              <div class="card card-primary card-outline">
+                <div class="card-body box-profile">
+                  <div class="text-center">
+                    <img class="profile-user-img img-fluid img-circle" src="../dist/img/logos/stock.PNG"
+                      alt="User profile picture">
+                  </div>
+                  <h3 class="profile-username text-center">Stockbrokers Malawi Ltd</h3>
+
+                  <hr class="bg-gray">
+                  <div class="btn-group">
+                                      
+                    <a href="#" data-toggle="modal" data-target="#modal-defauls"><button type="button"
+                        class="btn btn-outline-info btn-sm" data-container="body" title="Edit Broker">
+                        <i class="fa fa-edit"></i>
+                      </button>
+                    </a>    
+                    <a href="#" data-toggle="modal" data-target="#modal-defaulted"><button type="button"
+                        class="btn btn-outline-success btn-sm" data-container="body" title="Admins">
+                        <i class="fa fa-user-tie"></i>
+                      </button>
+                    </a>    
+                    <a href="#" data-toggle="modal" data-target="#modal-defauli"><button type="button"
+                        class="btn btn-outline-danger btn-sm" data-container="body" title="Delete Broker">
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+            </div>
+
+            <div class="col-sm-8 row">
+              <div class="col-sm-6">
+                <div class="card ">
+                  <div class="card-footer p-0">
+                    <ul class="nav flex-column">
+                      <div class="card-header">
+                        <h3 class="card-title text-muted"><b>Miscellaneous</b></h3>
+                        <h3 class="card-title float-right text-success"><b>15,943</b>
+                        </h3>
+                      </div>
+                      <li class="nav-item bg-dark">
+                        <a href="#" class="nav-link">
+                          Lessons <span class="float-right badge bg-primary">5</span>
+                        </a>
+                      </li>
+                      <li class="nav-item bg-dark">
+                        <a href="#" class="nav-link">
+                          Reports <span class="float-right badge bg-info">5</span>
+                        </a>
+                      </li>
+                      <li class="nav-item bg-dark">
+                        <a href="#" class="nav-link">
+                          Help <span class="float-right badge bg-warning">5</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card ">
+                  <div class="card-footer p-0">
+                    <ul class="nav flex-column">
+                      <div class="card-header">
+                        <h3 class="card-title text-muted"><b>Orders</b></h3>
+                        <h3 class="card-title float-right text-success"><b>120,500</b>
+                        </h3>
+                      </div>
+                      <li class="nav-item bg-dark">
+                        <a href="#" class="nav-link">
+                          New Orders <span class="float-right badge bg-primary">5</span>
+                        </a>
+                      </li>
+                      <li class="nav-item bg-dark">
+                        <a href="#" class="nav-link">
+                          Pending Orders <span class="float-right badge bg-info">5</span>
+                        </a>
+                      </li>
+                      <li class="nav-item bg-dark">
+                        <a href="#" class="nav-link">
+                          Executed Orders <span class="float-right badge bg-warning">5</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="info-box bg-dark">
+                      <div class="info-box-content">
+                        <h6 class="text-muted"><i class="fas fa-lg fa-building"></i><b class="text-success text-sm">
+                            Address</b></h6>
+                        <h6 class="text-xs text-dark">
+                          1st Floor, Ulimi House, Glyn Jones Road,<br>
+                          PO Box 1444,<br>
+                          Blantyre
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="info-box bg-dark">
+                      <div class="info-box-content">
+                        <h6 class="text-muted"><i class="fas fa-lg fa-building"></i><b class="text-success text-sm">
+                            Contact</b></h6>
+                        <h6 class="text-xs text-dark">
+                          </b>stockbrkrs@email.com<br></b>
+                          </b> +265(0) 1 828 363<br></b> +265(0) 1 828 363
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <div class="modal fade" id="modal-defaulted">
+      <br>
+      <br>
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-body bg-dark">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="text-dark text-center">
+              Brokers Admins
+            </h5>
+
+            <div class="card-body row ">
+              <ul class="users-list clearfix row">
+                <li class="col-sm-3">
+                  <img src="../dist/img/avatar.png" alt="User Image">
+                  <a class="users-list-name" href="#" data-toggle="modal" data-target="#modal-default">
+                    <b>Jack</b><br>
+                    <b class="text-success">Online</b>
+                  </a>
+                </li>
+                <li class="col-sm-3">
+                  <img src="../dist/img/avatar2.png" alt="User Image">
+                  <a class="users-list-name" href="#" data-toggle="modal" data-target="#modal-default"><b>Jane</b>
+                  </a>
+                </li>
+                <li class="col-sm-3">
+                  <img src="../dist/img/avatar4.png" alt="User Image">
+                  <a class="users-list-name" href="#" data-toggle="modal" data-target="#modal-default"><b>James</b>
+                  </a>
+                </li>
+                <li class="col-sm-3">
+                  <img src="../dist/img/avatar3.png" alt="User Image">
+                  <a class="users-list-name" href="#" data-toggle="modal" data-target="#modal-default"><b>Joan</b>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+            <a title="Add new Admin User" class="text-center nav-link" href="#" data-toggle="modal"
+              data-target="#modal-defaul">
+              <i class="fa fa-user-plus"></i>
+            </a>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!--/. container-fluid -->
+    <div class="modal fade" id="modal-default">
+      <br>
+      <br>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="card card-primary card-outline">
+            <div class="card-body box-profile">
+              <div class="text-center">
+                <img class="profile-user-img img-fluid img-circle" src="../dist/img/avatar.png">
+              </div>
+
+              <h3 class="profile-username text-center">Jack Shack</h3>
+              <p class="text-muted text-center">Dealer</p>
+
+              <hr class="bg-gray">
+
+              <div class="row">
+                <h6 class="col-12 text-center text-success">Priviledges</h6>
+                <div class="col-sm-6">
+
+                  <div class="info-box bg-navy">
+                    <div class="info-box-content">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate Companies Report</span> <br>
+                        <span> Upload Company reports</span> <br>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="info-box bg-navy">
+                    <div class="info-box-content">
+                      <h6 class="text-xs text-dark">
+                        <span> Upload market reports</span> <br>
+                        <span> Verify market reports</span> <br>
+                        <span> Delete market reports</span> <br>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="info-box bg-navy">
+                    <div class="info-box-content">
+                      <h6 class="text-xs text-dark">
+                        <span> Create Help Category</span> <br>
+                        <span> Create Help Article</span> <br>
+                        <span> Edit Help Article</span> <br>
+                        <span> Delete Help Article</span>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="info-box bg-navy">
+                    <div class="info-box-content">
+                      <h6 class="text-xs text-dark">
+                        <span> Create lesson</span> <br>
+                        <span> Edit lesson</span> <br>
+                        <span> Delete lesson</span> <br>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-box bg-navy">
+                    <div class="info-box-content">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate transactions report</span> <br>
+                        <span> Pend withdraw</span> <br>
+                        <span> Complete withdraw</span> <br>
+                        <span> Verify Deposits</span> <br>
+                        <span> Print transfers</span> <br>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="info-box bg-navy">
+                    <div class="info-box-content">
+                      <h6 class="text-xs text-dark">
+                        <span>Generate clients report</span><br>
+                        <span>Deny client </span> <br>
+                        <span>Verify client </span> <br>
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="info-box bg-navy">
+                    <div class="info-box-content">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Expire order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Print order</span> <br>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-group">
+                                                           
+                <a href="#" data-toggle="modal" data-target="#modal-defaulo"><button type="button"
+                    class="btn btn-outline-info btn-sm" data-container="body" title="Edit Priviledges">
+                    <i class="far fa-edit"></i>
+                  </button>
+                </a>    
+                <a href=""><button type="button" class="btn btn-outline-danger btn-sm" data-container="body"
+                    title="Delete Admin">
+                    <i class="far fa-trash-alt"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+
+    <div class="modal fade" id="modal-defaul">
+      <br>
+      <br>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="card-body bg-navy">
+            <h5 class="text-dark text-center"> New Brokers Admin</h5>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-border border-width-2"
+                    id="exampleInputBorderWidth2" placeholder="Full Name">
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-border border-width-2"
+                    id="exampleInputBorderWidth2" placeholder="Position">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Picture</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <h6 class="col-12 text-center text-success">Priviledges</h6>
+
+                <div class="form-group clearfix row">
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="" class=" btn btn-sm btn-outline-success"><b>Confirm</b></a>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" id="modal-defaulo">
+      <br>
+      <br>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="card-body bg-navy">
+            <h5 class="text-dark text-center"> Edit Brokers Admin</h5>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-border border-width-2"
+                    id="exampleInputBorderWidth2" placeholder="Full Name">
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-border border-width-2"
+                    id="exampleInputBorderWidth2" placeholder="Position">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Picture</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <h6 class="col-12 text-center text-success">Priviledges</h6>
+
+                <div class="form-group clearfix row">
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Generate orders report</span> <br>
+                        <span> Pend order</span> <br>
+                        <span> Execute order</span> <br>
+                        <span> Cancel order</span> <br>
+                        <span> Expire orders</span> <br>
+                        <span> Print orders</span> <br>
+                      </h6>
+                    </label>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="" class=" btn btn-sm btn-outline-success"><b>Confirm</b></a>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+
+    <div class="modal fade" id="modal-defauls">
+      <br>
+      <br>
+      <div class="modal-dialog">
+        <div class="modal-content bg-navy">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="card-body bg-navy">
+            <h5 class="text-dark text-center"> Edit Broker</h5>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Logo</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-border border-width-2"
+                    id="exampleInputBorderWidth2" placeholder="Brokerage Name">
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-border border-width-2"
+                    id="exampleInputBorderWidth2" placeholder="Address">
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-border border-width-2"
+                    id="exampleInputBorderWidth2" placeholder="Primary Contact">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-border border-width-2"
+                    id="exampleInputBorderWidth2" placeholder="Contact 2">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-border border-width-2"
+                    id="exampleInputBorderWidth2" placeholder="Contact 3">
+                </div>
+              </div>
+              <form class="col-sm-12 bg-dark">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <select class="custom-select form-control-border border-width-2 bg-dark"
+                        id="exampleSelectBorderWidth2">
+                        <option>Bank 1</option>
+                        <option>Bank 2</option>
+                        <option>Bank 3</option>
+                        <option>Bank 4</option>
+                        <option>Bank 5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control form-control-border border-width-2"
+                        id="exampleInputBorderWidth2" placeholder="Account Number">
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control form-control-border border-width-2"
+                        id="exampleInputBorderWidth2" placeholder="Account Holder's Name">
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="" class=" btn btn-sm btn-outline-success"><b>Confirm</b></a>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade" id="modal-defauli">
+      <br>
+      <br>
+      <div class="modal-dialog">
+        <div class="modal-content bg-navy">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="card-body bg-navy">
+            <div class="row">
+              <div class="col-12">
+                <h6 class="col-12 text-center text-danger">Delete Broker Because?</h6>
+                <div class="form-group clearfix row">
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Invalid ID</span><br>
+                      </h6>
+                    </label>
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Invalid Residence</span><br>
+                      </h6>
+                    </label>
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Invalid Employment details</span><br>
+                      </h6>
+                    </label>
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Invalid utility bill</span><br>
+                      </h6>
+                    </label>
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Invalid bank details</span><br>
+                      </h6>
+                    </label>
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Account Details not found</span><br>
+                      </h6>
+                    </label>
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Not accepting foreigners</span><br>
+                      </h6>
+                    </label>
+                  </div>
+                  <div class="icheck-primary d-inline col-sm-3">
+                    <input type="checkbox" id="checkboxPrimary1">
+                    <label for="checkboxPrimary1">
+                      <h6 class="text-xs text-dark">
+                        <span> Invalid payslip</span><br>
+                      </h6>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="brokers.html" class=" btn btn-sm btn-outline-success"><b>Confirm</b></a>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <strong>&copy; 2019-3019 <a href="https://mynvestor.com">Mynvestor.com</a>.</strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+        Investing made simple & clear.
+      </div>
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.min.js"></script>
+  <!-- Page specific script -->
+</body>
+
+</html>
