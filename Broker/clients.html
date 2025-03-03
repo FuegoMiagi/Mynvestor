@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Broker | Clients</title>
+  <link rel="icon" href="../dist/img/favicon.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-dark">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 New Clients
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 New Orders
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 Transactions
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-navy elevation-4 main-sidebar-custom ">
+      <!-- Brand Logo -->
+      <a href="dashboard.html" class="brand-link bg-navy">
+        <i class="text-success fa-2x fas fa-globe brand-image img-circle elevation-3 "></i>
+        <span class="brand-text font-weight-light"><strong class="text-success"><b>My</b></strong>nvestor</span>
+      </a>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../dist/img/logos/cdh.webp" class="img-circle elevation-2 bg-white" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block text-xs"><b>Continental Capital Ltd</b></a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+              <a href="dashboard.html" class="nav-link">
+                <i class="nav-icon fa fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="clients.html" class="nav-link active">
+                <i class="nav-icon fa fa-users"></i>
+                <p>
+                  Clients
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="orders.html" class="nav-link">
+                <i class="nav-icon fa fa-exchange-alt"></i>
+                <p>
+                  Orders
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="transactions.html" class="nav-link">
+                <i class="nav-icon fa fa-credit-card"></i>
+                <p>
+                  Transactions
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companies.html" class="nav-link">
+                <i class="nav-icon fa fa-city"></i>
+                <p>
+                  Companies
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="education.html" class="nav-link">
+                <i class="nav-icon fa fa-book"></i>
+                <p>
+                  Education
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="reports.html" class="nav-link">
+                <i class="nav-icon fa fa-file-alt"></i>
+                <p>
+                  Reports
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link">
+                <i class="nav-icon fa fa-question-circle"></i>
+                <p>
+                  Help
+                </p>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+
+      <div class="sidebar-custom">
+        <a href="lockscreen.html" class="btn btn-block btn-link"><i class="fa fa-power-off text-danger"></i></a>
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">New Clients <small class="text-xs text-dark float-right"> 08:50 | 13/7/22</small></h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                <li class="breadcrumb-item active">New Clients</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+
+          <div class="row">
+            <div class="col-sm-12 row">
+              <a href="clients.html" class="col-sm-4">
+                <div class="info-box bg-navy">
+                  <span class="info-box-icon bg-dark elevation-1"><i class="text-success fas fa-users"></i></span>
+                  <div class="info-box-content">
+                    <span class="info-box-text text-muted"><b>New Clients</b></span>
+                    <span class="info-box-number">
+                      10
+                    </span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+              </a>
+              <a href="deniedclients.html" class="col-sm-4">
+
+                <div class="info-box mb-3 ">
+                  <span class="info-box-icon bg-navy elevation-1"><i class="text-danger fas fa-users"></i></span>
+
+                  <div class="info-box-content">
+                    <span class="info-box-text text-muted"><b>Denied Clients</b></span>
+                    <span class="info-box-number">760</span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+              </a>
+              <a href="verified.html" class="col-sm-4">
+
+                <div class="info-box mb-3">
+                  <span class="info-box-icon bg-navy elevation-1"><i class="text-warning fas fa-users"></i></span>
+
+                  <div class="info-box-content">
+                    <span class="info-box-text text-muted"><b>Verified Clients</b></span>
+                    <span class="info-box-number">41,410</span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-header border-transparent">
+                  <h3 class="card-title text-muted"><b> New Clients</b></h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0 bg-navy">
+                  <div class="table-responsive text-center table-hover">
+                    <table id="example1" class="table table-bordered table-striped table-sm">
+                      <thead>
+                        <tr>
+                          <th><b class="text-muted">Name</b> </th>
+                          <th><b class="text-muted">Nationality</b> </th>
+                          <th><b class="text-muted">Email</b> </th>
+                          <th><b class="text-muted">Phone #</b> </th>
+                          <th><b class="text-muted">Bank</b> </th>
+                          <th><b class="text-muted">Bank Account #</b> </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><b> <a href="verifyclient.html"> Joe Ngalombe</a></b></td>
+                          <td>Eldian</td>
+                          <td>joengalombe@gmail.com</td>
+                          <td>088 723 5642</td>
+                          <td>TNM Mpamba</td>
+                          <td>088 723 5642</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th><b class="text-muted">Name</b> </th>
+                          <th><b class="text-muted">Nationality</b> </th>
+                          <th><b class="text-muted">Email</b> </th>
+                          <th><b class="text-muted">Phone #</b> </th>
+                          <th><b class="text-muted">Bank</b> </th>
+                          <th><b class="text-muted">Bank Account #</b> </th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+          </div>
+          <!--/. container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <strong>&copy; 2019-3019 <a href="https://mynvestor.com">Mynvestor.com</a>.</strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+        Investing made simple & clear.
+      </div>
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- DataTables  & Plugins -->
+  <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="../plugins/jszip/jszip.min.js"></script>
+  <script src="../plugins/pdfmake/pdfmake.min.js"></script>
+  <script src="../plugins/pdfmake/vfs_fonts.js"></script>
+  <script src="../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+  <script src="../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.min.js"></script>
+
+  <!-- Page specific script -->
+  <script>
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "buttons": ["pdf", "print", "colvis"]
+      }).buttons().container().appendTo('#example1_wrapper .col-sm-6:eq(0)');
+      $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+      });
+    });
+  </script>
+</body>
+
+</html>

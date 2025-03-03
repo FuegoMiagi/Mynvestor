@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Broker | Pending Transfer</title>
+  <link rel="icon" href="../dist/img/favicon.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-dark">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 New Clients
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 New Orders
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 Transactions
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-navy elevation-4 main-sidebar-custom ">
+      <!-- Brand Logo -->
+      <a href="dashboard.html" class="brand-link bg-navy">
+        <i class="text-success fa-2x fas fa-globe brand-image img-circle elevation-3 "></i>
+        <span class="brand-text font-weight-light"><strong class="text-success"><b>My</b></strong>nvestor</span>
+      </a>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../dist/img/logos/cdh.webp" class="img-circle elevation-2 bg-white" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block text-xs"><b>Continental Capital Ltd</b></a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+              <a href="dashboard.html" class="nav-link">
+                <i class="nav-icon fa fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="clients.html" class="nav-link">
+                <i class="nav-icon fa fa-users"></i>
+                <p>
+                  Clients
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="orders.html" class="nav-link">
+                <i class="nav-icon fa fa-exchange-alt"></i>
+                <p>
+                  Orders
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="transactions.html" class="nav-link active">
+                <i class="nav-icon fa fa-credit-card"></i>
+                <p>
+                  Transactions
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companies.html" class="nav-link">
+                <i class="nav-icon fa fa-city"></i>
+                <p>
+                  Companies
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="education.html" class="nav-link">
+                <i class="nav-icon fa fa-book"></i>
+                <p>
+                  Education
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="reports.html" class="nav-link">
+                <i class="nav-icon fa fa-file-alt"></i>
+                <p>
+                  Reports
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link">
+                <i class="nav-icon fa fa-question-circle"></i>
+                <p>
+                  Help
+                </p>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+
+      <div class="sidebar-custom">
+        <a href="lockscreen.html" class="btn btn-block btn-link"><i class="fa fa-power-off text-danger"></i></a>
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">TR00291 <small class="text-xs text-dark float-right"> 08:50 | 13/7/22</small></h1>
+              <span class="badge badge-secondary">Pending</span>
+              <span class="badge badge-danger">Withdraw</span>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="orders.html">Pending Transfers</a></li>
+                <li class="breadcrumb-item active">TR00291</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+
+          <div class="row">
+            <div class="col-sm-12">
+
+              <!-- Main content -->
+              <div class="invoice p-3 mb-3">
+                <!-- title row -->
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h4 class="text-dark">
+                      <b class="text-success"><i class="fas fa-globe"></i> My</b>nvestor, Inc.
+                      <small class="float-right"><b class="text-dark"> Date: 2/10/2014</b></small>
+                    </h4>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <br>
+                <!-- info row -->
+                <div class="row invoice-info">
+                  <div class="col-sm-4 invoice-col">
+                    <div class="info-box bg-navy">
+                      <div class="info-box-content">
+                        <h5 class="text-center"><b class="text-center text-info"> From</b></h5>
+                        <h6 class="text-center"><b class="text-center"> Joe Ngalombe</b></h6>
+                        <span class="text-center text-muted">
+                          <b class="text-muted">Account ID :</b> <b class="text-success"> 1234567890</b><br>
+                          <b class="text-muted">Balance :</b> <b class="text-success">K5,000,000</b><br>
+                          <b class="text-muted">Withdrawable :</b> <b class="text-success">K500,000</b>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+
+                  <div class="col-sm-4 invoice-col">
+                    <div class="info-box bg-navy">
+                      <div class="info-box-content">
+                        <h5 class="text-center"><b class="text-secondary text-center"><span
+                              class="badge badge-danger">Withdraw</span></b></h5>
+                        <span class="text-center text-muted">
+                          <b class="text-muted">Amount :</b> <b class="text-success"> K500,000</b> <br>
+                          <b class="text-muted">Transfer Fee :</b> <b class="text-success">K5,000</b> <br>
+                          <b class="text-muted">Total :</b> <b class="text-success">K495,000</b> <br>
+                          <b class="text-muted">Transaction ID :</b> <b class="text-success">TR00291</b> <br>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 invoice-col">
+
+                    <div class="info-box bg-navy">
+                      <div class="info-box-content">
+                        <h5 class="text-center"><b class="text-center text-info"> To</b></h5>
+                        <h6 class="text-center"><b class="text-center"> Joe Ngalombe</b></h6>
+                        <span class="text-center text-muted">
+                          <b class="text-muted">Bank Name :</b> <b class="text-success"> TNM Mpamba</b> <br>
+                          <b class="text-muted">Account Number :</b> <b class="text-success">088 723 5642</b> <br>
+                          <b class="text-muted">Account Holder :</b> <b class="text-success">Joe Ngalombe</b>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <hr class="bg-gray">
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                    <h5 class="text-sm text-muted text-center">
+                      Transfer was initiated at 2:22:22 CAT 22/2/22
+                      <br>
+                      Transfer was pended at 22:22:22 CAT 22/2/22
+                    </h5>
+                  </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- this row will not appear when printing -->
+                <div class="row no-print">
+                  <div class="col-sm-12">
+                    <a href="withdrawals.html" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-left"></i>
+                      Back</a>
+                    <a href="invoice-print.html" rel="noopener" target="_blank" class="btn btn-default btn-sm"><i
+                        class="fas fa-print"></i> Print</a>
+                    <a href="completedtransfer.html" class="btn btn-outline-success float-right btn-sm"><i
+                        class="fas fa-check"></i> Complete Transfer</a>
+                  </div>
+                </div>
+              </div>
+              <!-- /.invoice -->
+            </div><!-- /.col -->
+          </div>
+
+          <!-- /.row -->
+        </div>
+        <!--/. container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <strong>&copy; 2019-3019 <a href="https://mynvestor.com">Mynvestor.com</a>.</strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+        Investing made simple & clear.
+      </div>
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- REQUIRED SCRIPTS -->
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.js"></script>
+</body>
+
+</html>
